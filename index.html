@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="Ejercicios">
+        <div class="Ejercicio1">
+            <h1>EJERCICIO 1</h1>
+            <h2>Estadísticas de Pesos de Alumnos</h2>
+            <label for="peso">Introducir peso (en kg):</label>
+            <input type="number" id="peso" name="peso">
+            <button onclick="agrPeso()">Agregar Peso</button>
+
+            <h2>Porcentajes de Pesos:</h2>
+            <ul>
+                <li>Alumnos de menos de 40kg: <span id="Menos40kg">0%</span></li>
+                <li>Alumnos entre 40kg y 50kg: <span id="Entre40-50kg">0%</span></li>
+                <li>Alumnos de más de 50kg y menos de 60kg: <span id="Mas50-Menos60kg">0%</span></li>
+                <li>Alumnos de más o igual a 60kg: <span id="Mas60kg">0%</span></li>
+            </ul>
+        </div>
+        <div class="Ejercicio2">
+            <h1>EJERCICIO 2</h1>
+            <h2>Calculadora de Interés</h2>
+            <label>Monto Inicial:</label>
+            <input type="number" id="montoInicial" step="0.01">
+            <button onclick="calInteres()">Calcular</button>
+            <p id="Resultado"></p>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+
+</body>
+
+</html>
